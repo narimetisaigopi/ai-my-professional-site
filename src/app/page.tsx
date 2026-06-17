@@ -5,8 +5,8 @@ import { About } from "@/components/About";
 import { Experience } from "@/components/Experience";
 import { Skills } from "@/components/Skills";
 import { Contact } from "@/components/Contact";
-import { ChatAssistant } from "@/components/ChatAssistant";
 import { Footer } from "@/components/Footer";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Sai Gopi Narimeti - Principal Software Engineer",
@@ -18,13 +18,12 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main>
+      <main className="bg-slate-900">
         <Hero />
         <About />
         <Experience />
         <Skills />
         <Contact />
-        <ChatAssistant />
       </main>
       <Footer />
     </>
